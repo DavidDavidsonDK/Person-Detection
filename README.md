@@ -1,11 +1,11 @@
 # Person-Detection
 #TODO List 1 (tools)
-- [ ] Script for downloading data
-- [ ] Write parsers to read and to  write annotation as XML  (Pascal-Voc)
-- [ ] Write Visualing images with bounding boxes
+- [X] Script for downloading data
+- [X] Write parsers to read and to  write annotation as XML  (Pascal-Voc)
+- [X] Write Visualing script to plot  images with bounding boxes
 
 #TODO List 2 (data augmentation)
-- [ ] Horizontal Flip
+- [X] Horizontal Flip
 - [ ] Scaling
 - [ ] Translation
 - [ ] Rotation
@@ -13,9 +13,9 @@
 - [ ] Resizing
 
 #TODO LIST 3 (Apply K-means on bouding box and find best anchors)
-- [ ] Find Best Kluster ELbow
+- [ ] Find Best and Kluster ELbow
 
-#TODO LIST 4 (Download darknet yolo-tiny model)
+#TODO LIST 4 (Download darknet/yolo-tiny model and train)
 - [ ] Install it into docker
 - [ ] Train on our data, fine tuning
 - [ ] Save best one
