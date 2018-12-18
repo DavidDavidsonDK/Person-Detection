@@ -6,7 +6,7 @@
 
 #TODO List 2 (data augmentation)
 - [X] Horizontal Flip
-- [ ] Scaling
+- [X] Scaling
 - [ ] Translation
 - [ ] Rotation
 - [ ] Shearing
