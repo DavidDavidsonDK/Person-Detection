@@ -58,8 +58,10 @@ class Scale(BaseAugmentation):
     
         img=  cv2.resize(img, None, fx = resize_scale_x, fy = resize_scale_y)
     
-        bboxes[:,:4] *= [resize_scale_x, resize_scale_y, resize_scale_x, resize_scale_y]
- 
+        #bboxes[:,:4] *= [resize_scale_x, resize_scale_y, resize_scale_x, resize_scale_y]
+        bboxes = bboxes.astype(np.float64)
+        bboxes *= np.array([resize_scale_x, resize_scale_y, resize_scale_x, resize_scale_y])
+
         canvas = np.zeros(img_shape, dtype = np.uint8)
     
         y_lim = int(min(resize_scale_y,1)*img_shape[0])
