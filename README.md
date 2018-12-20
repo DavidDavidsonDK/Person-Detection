@@ -8,7 +8,7 @@
 - [X] Horizontal Flip
 - [X] Scaling
 - [X] Translation
-- [ ] Rotation
+- [X] Rotation
 - [ ] Shearing
 - [ ] Resizing
 
