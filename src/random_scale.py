@@ -67,7 +67,7 @@ class Scale(BaseAugmentation):
         y_lim = int(min(resize_scale_y,1)*img_shape[0])
         x_lim = int(min(resize_scale_x,1)*img_shape[1])
     
-        print(y_lim, x_lim)
+        #print(y_lim, x_lim)
     
         canvas[:y_lim,:x_lim,:] =  img[:y_lim,:x_lim,:]
     
