@@ -13,7 +13,7 @@
 - [ ] Resizing
 
 #TODO LIST 3 (Apply K-means on bouding box and find best anchors)
-- [ ] Find Best and Kluster ELbow
+- [X] Find Best and Kluster ELbow
 
 #TODO LIST 4 (Download darknet/yolo-tiny model and train)
 - [ ] Install it into docker
