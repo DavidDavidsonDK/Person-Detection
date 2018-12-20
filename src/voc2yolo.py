@@ -2,9 +2,6 @@ import numpy as np
 import xml.etree.ElementTree as ET
 import os
 
-classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat", "chair", "cow", 
-           "diningtable", "dog", "horse", "motorbike", "person", "pottedplant", "sheep", "sofa", "train", "tvmonitor"]
-
 def convert_voc_to_yolo(xml_anotation_file, yolo_writer, coco=False):
     in_file = open(xml_anotation_file)
     tree = ET.parse(in_file)
@@ -27,7 +24,7 @@ def voc2yolo(data_set_path):
     for img_or_xml in os.listdir(path=data_set_path):
         if img_or_xml.endswith('.xml'):
             yolo_writer.write(data_set_path+img_or_xml.split('.')[0]+'.jpg')
-            convert_voc_to_yolo(data_set_path+img_or_xml,yolo_writer)
+            convert_voc_to_yolo(data_set_path+img_or_xml,yolo_writer,coco=True)
             yolo_writer.write('\n')
     yolo_writer.close()
 
