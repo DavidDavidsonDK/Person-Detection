@@ -16,9 +16,9 @@
 - [X] Find Best and Kluster ELbow
 
 #TODO LIST 4 (Download darknet/yolo-tiny model and train)
-- [ ] Install it into docker
-- [ ] Train on our data, fine tuning
-- [ ] Save best one
-- [ ] Evaluate on test set with mAP metric
+- [X] Install it into docker
+- [X] Train on our data, fine tuning
+- [x] Save best one
+- [X] Evaluate on test set with mAP metric
  
 
